@@ -1,117 +1,121 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
-    <title>My Dashboard</title>
-  </head>
-  <body>
-	<header>
-		<strong>Welcome to your dashboard!</strong>
-	</header>
-	<section>
-		<h5>Personal information</h5>
-		<figure>
-			<img src="res/images/me.png" width="128" height="128" alt="My picture">
-			<figcaption>Fig.1 - A nice Selfie</figcaption>
-		</figure>
-		<div>
-			<ul>
-				<li>Jan Petersen</li>
-				<li> 18/09/2023</li>
-				<li> Software Engineering </li>
-			</ul>
-		</div>
-		<div>
-			<strong>2.65</strong>
-		</div>
-	</section>
-	<section>
-		<h1>Courses</h1>
-		<table>
+    <title>Lab 3 - CSS</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <a class="logo" href="#"><img src="res/images/me.png" width="50" height="50" alt="My picture"></a>
+    </header>
+
+
+    <section>
+        <h1>Personal Information</h1>
+        <div class="nav">
+            <ul>
+                <li>Your name</li>
+                <li> date: dd/mm/yyyy</li>
+                <li>Software Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+
+    <section>
+        <h1>Courses</h1>
+        <table>
             <thead>
-            <tr>
-                <th>#</th>
-                <th>Course Title</th>
-                <th>Semester</th>
-                <th>Grade</th>
-				<th>Link</th>
-            </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
             </thead>
             <tbody>
-				<tr>
-				<td>1</td>
-				<td>Agile software development</td>
-				<td>fall</td>
-				<td>82</td>
-				<td>
-					<a href="https://courses.cs.ut.ee/2023/ASD/fall" title="This can be seen when hovering :)" target="_blank" rel="noopener noreferrer"> Agile software development </a>
-				</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td> Systems modelling </td>
-				<td>fall</td>
-				<td>85</td>
-				<td>
-					<a href="https://courses.cs.ut.ee/2023/systemsmodelling/fall" title="This can be seen when hovering :)" target="_blank" rel="noopener noreferrer">Systems modelling</a>
-				</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td> Requirements Engineering </td>
-				<td>fall</td>
-				<td>99</td>
-				<td>
-					<a href="https://courses.cs.ut.ee/2023/RE/fall" title="This can be seen when hovering :)"  target="_blank" rel="noopener noreferrer">Requirements Engineering</a>
-				</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td> Human Computer Interaction </td>
-				<td>fall</td>
-				<td>65</td>
-				<td>
-					<a href="https://courses.cs.ut.ee/2023/HCI/fall" title="This can be seen when hovering :)" target="_blank" rel="noopener noreferrer">Human Computer Interaction</a>
-				</td>
-			</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td> A cool Table footer. </td>
-					<td> 
-						<a href="mailto: test@toast.com">Tost tester Mail</a>
-					</td>
-				</tr>
-			</tfoot>
-		</table>
-	</section>
-	<section>
-		<h3>Add a course:</h3>
-		<form action = "some_remote_path">
-			<label for="courseTitle">Course Title:</label> <br>
-			<input type="text" id="courseTitle"> <br>
-			<label for="semester">Semester:</label> <br>
-			<select name = "semester" id = "semester">
-				<option value="fall">Fall</option>
-				<option value="spring">Spring</option>
-			</select> <br>
-			<label for="attendence"><strong>Attendance:</strong></label> <br>
-				<input type="radio" name="attendance"> Virtual attendance <br>
-				<input type="radio" name="attendance"> Physical attendance <br>
-			<input type="submit"/>
-		</form>
-	</section>
-	<footer>
-		<ul>
-			<li>
-				<a href="https://ois2.ut.ee/" target="_blank" rel="noopener noreferrer">OIS</a>
-			</li>
-			<li>
-				<a href="https://courses.cs.ut.ee/" target="_blank" rel="noopener noreferrer">Courses</a>
-			</li>
-		</ul>
-	</footer>
-  </body>
+                <tr>
+                    <td>1</td>
+                    <td>Agile software development</td>
+                    <td>fall</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> Systems modelling </td>
+                    <td>fall</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td> Requirements Engineering </td>
+                    <td>fall</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td> Human Computer Interaction </td>
+                    <td>fall</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>-</td>
+                    <td> - </td>
+                    <td>-</td>
+                    <td>- </td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+
+
+
+    <div class="grid">
+
+        <p>Course 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+        <p>Course 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+
+        <p>Course 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+        <p>Course 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam voluptates veniam, alias modi nulla nobis nisi quo reprehenderit cupiditate, veritatis tenetur voluptate corporis corrupti ipsa, accusantium minus porro quae.</p>
+
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/">Courses</a>
+            </li>
+        </ul>
+    </footer>
+
+
+</body>
+
 </html>
