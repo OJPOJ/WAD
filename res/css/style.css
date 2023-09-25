@@ -1,0 +1,9 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /*
+       CSS comment
+       The box-sizing CSS property sets how the total width and height of an element are calculated. 
+       If you set box-sizing: border-box; on an element, padding, and border are included in the width and height:
+    */
+  }
